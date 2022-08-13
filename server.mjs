@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000
 
 let user = [];
 
-app.post('/user', (req, res) => {
+app.post('https://restful-api-server-heroku-3.herokuapp.com/user', (req, res) => {
     
     console.log(req.body);
  
@@ -18,7 +18,7 @@ app.post('/user', (req, res) => {
 
   })
 
-app.get('/user', (req, res) => {
+app.get('https://restful-api-server-heroku-3.herokuapp.com/user', (req, res) => {
   res.send(user)
 })
 
